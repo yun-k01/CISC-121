@@ -1,0 +1,15 @@
+1. [4 marks] Use the current implementation, and replace the swap in line 18 with a loop that shifts all elements of the sorted half of the list one position to the right, and moves the current minimum to position 0.  
+The total number of new lines you should add is between 4-6
+Sort the list in-place. No secondary lists. You may save the value of the current minimum.
+Hint: Does element j+1 need to stay in position?
+
+for k in range(0, n-1, -1):         18
+    my_list[k+1] = my_list[k]       19
+my_list[0] = my_list[current_min]   20
+my_list[-current_min]               21
+
+
+
+2. [6 marks] In 2-3 sentences, describe why the implementation of cubic_sort has a cubic time-complexity. Consider each loop, and how many computations must be completed. 
+The implementation of cubic_sort has a cubic time-complexity because for each loop through the first loop (line 13), it will iterate through the second for loop (line 15), and then the third for loop (line 18).
+This requires that for any n items in a list, it will run through the first loop n times, then for the second loop, it will run through n times for every item in the list (n*n), and for the final loop, it will run through n times for every time the second loop is run (n*n*n)

@@ -1,0 +1,18 @@
+Code: 
+test_1 = bisection_zero([1, -7, 10], 1, 4)
+test_2 = bisection_zero([2, -13, 22, -8], -1, 1.5)
+test_3 = bisection_zero([8, 0, 0, -1], -1, 3)
+test_4 = bisection_zero([1, 1], 3, 1)
+test_5 = bisection_zero([1, -6, -5, 90, -176, 96], -6, 12)
+
+Test Values:
+test #  |            f_x            |  a_0, b_0  |  zero_f
+--------+---------------------------+------------+---------
+1       |[1, -7, 10]                |1, 4        |2.000
+2       |[2, -13, 22, -8]           |-1, 1.5     |0.500
+3       |[8, 0, 0, -1]              |-1, 3       |0.500
+4       |[1, 1]                     |3, 1        |-1.000
+5       |[1, -6, -5, 90, -176, 96]  |-6, 12      |3.000
+
+I chose to test #1-3 because I would be able to compare the values from my function to the correct ones in the assignment page
+Then, I chose to try #4 to see how the function would perform with only one root in the function. Lastly, I chose to try #5 to see how the function would perform in a larger function that has multiple roots.
